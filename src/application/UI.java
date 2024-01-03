@@ -105,8 +105,7 @@ public class UI {
 	        else {
 	            System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
 	        }
-		}
-		//System.out.print(" ");
+		}		
 	}
 	private static void printCapturedPiece(List<ChessPiece> captured) {
 		List<ChessPiece> white = captured.stream().filter(x -> x.getColor() == Color.WHITE).collect(Collectors.toList());
